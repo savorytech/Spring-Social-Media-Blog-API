@@ -101,5 +101,4 @@ public class MessagesController {
     @ExceptionHandler(InvalidInputException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public String handleInvalidInput(InvalidInputException ex){ return ex.getMessage(); }
-
 }
